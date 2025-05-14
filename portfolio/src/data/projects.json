@@ -1,0 +1,41 @@
+[
+    {
+      "id": 1,
+      "title": "Booki",
+      "description": "Interface responsive pour explorer des hébergements selon la ville, avec une intégration soignée en HTML/CSS fidèle aux maquettes. \n\nLe défi : un rendu pixel-perfect sur tous les écrans, une structure sémantique claire et un code 100 % conforme aux standards W3C.",
+      "tags": ["HTML5", "CSS3", "RESPONSIVE DESIGN"],
+      "link": "https://clemence-bonnin.github.io/booki-project/",
+      "github": "https://github.com/clemence-bonnin/booki-project"
+    },
+    {
+      "id": 2,
+      "title": "Sophie Bluel",
+      "description": "Galerie interactive de projets architecturaux, filtrable par catégorie et administrable via une interface sécurisée. \n\nL'expérience repose sur une gestion fine du DOM, une modale dynamique pour l’upload, et une synchronisation fluide avec l’API sans rechargement.",
+      "tags": ["Javascript", "Swagger", "HTML5", "CSS3"],
+      "github": "https://github.com/clemence-bonnin/portfolio-sophie-bluel"
+    },
+    {
+      "id": 3,
+      "title": "Kasa",
+      "description": "Plateforme de location d'appartements avec navigation fluide, carrousel d’images immersif et composants réactifs, le tout en React. \n\nL’accent a été mis sur la gestion des états, les animations CSS et un routage conditionnel robuste pour une SPA responsive.",
+      "tags": ["React", "Vite JS", "Sass"],
+      "link": "https://kasa-theta-lilac.vercel.app/",
+      "github": "https://github.com/clemence-bonnin/kasa"
+    },
+    {
+      "id": 4,
+      "title": "Mon vieux grimoire",
+      "description": "Application de notation de livres avec inscription, ajout de contenus et évaluation, le tout orchestré via une API REST en Node/Express/MongoDB. \n\nLes principaux enjeux : sécuriser l’authentification, optimiser les images et garantir l’unicité des notations.",
+      "tags": ["Node JS", "Express", "Mongo DB", "Mongoose", "JWT"],
+      "github": "https://github.com/clemence-bonnin/vieux-grimoire"
+    },
+    {
+      "id": 5,
+      "title": "Clone Netflix",
+      "description": "Un clone visuel de Netflix avec gestion des utilisateurs, streaming de vidéos et backend Firebase.",
+      "tags": ["React", "Redux", "Firebase", "TMDB API"],
+      "link": "https://netflix-clone-app.com",
+      "github": "https://github.com/ton-compte/netflix-clone"
+    }
+  ]
+  

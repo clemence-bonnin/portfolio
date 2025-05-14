@@ -1,0 +1,175 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 6rem 2rem;
+  background-color: #f3f3f3;
+  font-family: 'Space Grotesk', sans-serif;
+  gap: 3rem;
+  position: relative;
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 8px;
+    border: 0.5px solid transparent;
+    border-radius: 12px;
+  }
+
+  .cell {
+    display: flex;
+    padding: 2rem;
+    border: 0.5px solid #DBDBDB;
+    border-radius: 12px;
+  }
+
+  .portrait {
+    grid-row: span 2 / span 2;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .collapse {
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
+    flex-direction: column;
+  }
+
+  .tech {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  &__portrait {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+  }
+
+  &__bio {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  &__divider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .about__icon-3d {
+      width: 120px;
+      height: 120px;
+      background: radial-gradient(circle at center, #b5ff86, #00ff55cc);
+      border-radius: 50%;
+      filter: blur(6px);
+      margin-bottom: 2rem;
+      opacity: 0.8;
+    }
+
+    .about__line {
+      width: 1px;
+      height: 100%;
+      background-color: #999;
+      opacity: 0.3;
+    }
+  }
+
+  &__right {
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      color: #666;
+    }
+
+    .about__services {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem 0;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #ddd;
+
+        button {
+          background: none;
+          border: 1px solid #333;
+          border-radius: 50%;
+          width: 28px;
+          height: 28px;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 50px;
+    bottom: -350px;
+    width: 400px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+
+    &__container {
+      padding: 0;
+    }
+
+    .parent {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cell {
+      padding: 1.5rem;
+      flex-direction: column;
+    }
+
+    .portrait {
+      align-items: center;
+      text-align: center;
+    }
+
+    .about__bio {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      max-width: 100%;
+    }
+
+    .collapse {
+      gap: 1rem;
+    }
+
+    .tech {
+      justify-content: center;
+    }
+
+    &__arrow {
+      display: none;
+    }
+  }
+}
